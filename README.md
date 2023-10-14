@@ -9,3 +9,11 @@
 
 문법은 다음 파일에서 확인하세요.
 [SYNTAX.md](./SYNTAX.md)
+
+## INSTALLATION
+
+설치는 다음과 같이 NPM에서 진행할 수 있습니다.
+
+```sh
+npm i -g company_like_family
+```

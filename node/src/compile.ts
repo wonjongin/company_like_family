@@ -1,10 +1,9 @@
 import { command_appender } from "./commands";
 import { writeFileSync, readFileSync } from "fs";
 
-(async () => {
-  const args = process.argv.slice(2);
-
-  if (args[0] != "순형아") {
+export default function compile(args: string[]) {
+  if (args[0] != "순형씨") {
+    console.log("순형씨를 부르셔야져");
     process.exit(1);
   }
   if (args[5] == "변환해줘^^") {
@@ -18,4 +17,4 @@ import { writeFileSync, readFileSync } from "fs";
     writeFileSync(args[3], "#!/usr/bin/env node\n" + result.join("\n"));
     console.log("변환헀어요!");
   }
-})();
+}
